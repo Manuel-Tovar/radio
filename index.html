@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <title>Radio</title>
+</head>
+
+<body>
+  <main>
+
+    <section class="content">
+      <div class="left-content">
+
+        <div class="countries">
+          <h1>Países</h1>
+          <input type="text" id="country-search-input" placeholder="Buscar país..." autocomplete="nope">
+          <div class="countries-container containers" id="containerCountry">
+
+            <!-- Aquí se generará dinámicamente el contenido de los países -->
+
+          </div>
+        </div>
+
+        <div class="languages">
+
+          <h1>Idiomas</h1>
+          <div class="languages-container containers">
+            <!-- Aquí se generará dinámicamente el contenido de los Idiomas -->
+          </div>
+        </div>
+      </div>
+
+      <div class="right-content">
+        <div class="recommended-songs">
+
+
+          <div class="music-player">
+            <div class="music-cover">
+              <img src="./img/radio_vinil.png" id="rotatingImage" alt="radio" />
+              <span class="point"></span>
+            </div>
+
+            <h2>Cargando...</h2>
+            <p>Radio</p>
+
+            <audio id="song">
+              <source src="Besomorph-Coopex-Redemption.mp3" type="audio/mpeg" />
+            </audio>
+
+ 
+            <div class="controls">
+              <button class="backward">
+                <i class="fa-solid fa-backward"></i>
+              </button>
+              <button class="play-pause-btn">
+                <i class="fa-solid fa-play" id="controlIcon"></i>
+              </button>
+              <button class="forward">
+                <i class="fa-solid fa-forward"></i>
+              </button>
+            </div>
+          </div>
+
+          <h1>Lista de Emisoras</h1>
+          <input type="text" id="song-search-input" placeholder="Buscar Emisoras..." autocomplete="off" />
+          <div class="song-container" id="song-container">
+
+            <!-- AQUI SE IMPRIMEN LA LISTA DE RADIOS -->
+           
+          </div>
+          <div id="load-more-container">
+            <button id="load-more-btn">Cargar más</button>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+  </main>
+
+
+  <script type="module" src="./app.js"></script>
+</body>
+
+</html>
